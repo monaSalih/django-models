@@ -1,10 +1,23 @@
 
-# Created by https://www.toptal.com/developers/gitignore/api/python,vs
-# Edit at https://www.toptal.com/developers/gitignore?templates=python,vs
+# Created by https://www.toptal.com/developers/gitignore/api/django,vs
+# Edit at https://www.toptal.com/developers/gitignore?templates=django,vs
 
-### Python ###
-# Byte-compiled / optimized / DLL files
+### Django ###
+*.log
+*.pot
+*.pyc
 __pycache__/
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+media
+
+# If your build process includes running collectstatic, then you probably don't need or want to include staticfiles/
+# in your Git repository. Update and uncomment the following line accordingly.
+# <django-project-name>/staticfiles/
+
+### Django.Python Stack ###
+# Byte-compiled / optimized / DLL files
 *.py[cod]
 *$py.class
 
@@ -58,13 +71,8 @@ cover/
 
 # Translations
 *.mo
-*.pot
 
 # Django stuff:
-*.log
-local_settings.py
-db.sqlite3
-db.sqlite3-journal
 
 # Flask stuff:
 instance/
@@ -450,7 +458,6 @@ paket-files/
 .cr/personal
 
 # Python Tools for Visual Studio (PTVS)
-*.pyc
 
 # Cake - Uncomment if you are using it
 # tools/**
@@ -495,5 +502,5 @@ MigrationBackup/
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
 
-# End of https://www.toptal.com/developers/gitignore/api/python,vs
+# End of https://www.toptal.com/developers/gitignore/api/django,vs
 __pycache__
